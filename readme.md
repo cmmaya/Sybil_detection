@@ -13,3 +13,7 @@ To detect communities in a large networks, we test the following algorithms:
 - **DBSCAN**: Clusters nodes based on the density of their connections. It’s a good choice for finding communities in networks where there are dense regions and less dense or noisy points
 
 **Post-clustering**: After applying the clustering method, communities with size +15 members are analysed to see the connected subclusters with less than 15 members and count the total accounts. Then the number is evaluated based on the number of sybil accounts obtained in the simulation.
+
+**TODO**: 
+- Find state of the art clustering techniques
+- Cluster time and amount from transaction's info.
