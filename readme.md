@@ -14,6 +14,13 @@ To detect communities in a large networks, we test the following algorithms:
 
 **Post-clustering**: After applying the clustering method, communities with size +15 members are analysed to see the connected subclusters with less than 15 members and count the total accounts. Then the number is evaluated based on the number of sybil accounts obtained in the simulation.
 
-**TODO**: 
-- Find state of the art clustering techniques
-- Cluster time and amount from transaction's info.
+**data description**:
+
+- **blacklist.csv**: contains Exchange account hashes, founder accounts, transmitters, AMMs and network wallets. Constrcuted from https://github.com/hop-protocol/hop-airdrop/tree/master/src/data/blacklists.
+- **DAI,ETH,MATIC,USDT,USDC_hopTransfers**: app transfers from https://github.com/hop-protocol/hop-airdrop/tree/master/src/data/transfers/hopTransfers.
+- **ethereum_batch**: all ethereum batches from native Token transfers https://github.com/hop-protocol/hop-airdrop/tree/master/src/data/transfers/nativeTokenTransfers
+  **TODO**:
+
+* Find state of the art clustering techniques
+* Cluster time and amount from transaction's info.
+* Try with the ethereum_bnatches transaction history from Hop's Github. Also search for their airdrop mechanism to check where to get the info exactly.
